@@ -5,15 +5,16 @@ asset User identified by phone {
   o Double votes
 }
 
-asset Candidate identified by phone {
-  o String phone
+asset Candidate identified by uid {
+  o String uid
   o String name
   o String image
   o String symbol
   o String description
+  o Double votes
 }
 
 transaction CommitVote {
   --> User voter
-  --> User contestant
+  --> Candidate contestant
 }
