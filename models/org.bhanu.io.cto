@@ -1,17 +1,11 @@
 namespace org.bhanu.io
 
-participant User identified by phone {
+asset User identified by phone {
   o String phone
   o Double votes
 }
 
-asset Election identified by name {
-  o String name
-  o String[] contestants
-}
-
 transaction CommitVote {
-  --> Election election
   --> User voter
   --> User contestant
 }
