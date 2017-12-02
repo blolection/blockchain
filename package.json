@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Elections on blockchain",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "start": "composer-rest-server -c admin@blolection -n never -w true"
   },
   "author": "bhanu",
   "email": "bhanu423@gmail.com",
