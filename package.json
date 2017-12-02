@@ -1,0 +1,21 @@
+{
+  "name": "blolection",
+  "version": "0.0.1",
+  "description": "Elections on blockchain",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "bhanu",
+  "email": "bhanu423@gmail.com",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
