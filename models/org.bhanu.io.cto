@@ -1,8 +1,7 @@
 namespace org.bhanu.io
 
-participant User identified by email {
-  o String email
-  o String aadhar
+participant User identified by phone {
+  o String phone
   o Double votes
 }
 
