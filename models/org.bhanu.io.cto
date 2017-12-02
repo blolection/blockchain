@@ -11,7 +11,7 @@ asset Election identified by name {
   o String[] contestants
 }
 
-transaction Vote {
+transaction CommitVote {
   --> Election election
   --> User voter
   --> User contestant
