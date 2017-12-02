@@ -10,6 +10,7 @@ asset Candidate identified by phone {
   o String name
   o String image
   o String symbol
+  o String description
 }
 
 transaction CommitVote {
