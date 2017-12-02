@@ -3,13 +3,7 @@ namespace org.bhanu.io
 participant User identified by email {
   o String email
   o String aadhar
-  o String voted
-}
-
-asset Vote identified by vote {
-  o String vote
-  o String election_id
-  o String contestant
+  o Double votes
 }
 
 asset Election identified by name {
@@ -17,7 +11,8 @@ asset Election identified by name {
   o String[] contestants
 }
 
-transaction CommitVote {
+transaction Vote {
   --> Election election
-  --> Vote vote
+  --> User voter
+  --> User contestant
 }
